@@ -1,0 +1,80 @@
+
+<html>
+    <head>
+        <title>Desafio do Curso </title>
+    </head>
+   <body>
+       <script>
+
+            var x = "10s", y = 5;
+
+            var resultado = x - y;
+
+            console.log ( resultado);
+
+        function soma(numero1, numero2) {
+
+            var resultado = numero1 + numero2;
+
+            return resultado;
+
+         }
+
+
+         console.log(soma(10,5));
+
+
+            function exeperiencia(anos) {
+                switch (anos) {
+                    case 0:
+                    case 1:
+
+                    return 'Iniciante';
+                    break;
+            
+                    case 2:
+                    case 3:
+
+                    return 'Intermediário';
+                    break;
+
+                    case 4:
+                    case 5:
+                    case 6:
+
+                    return 'Avançado';
+                    break;
+
+                    default:
+                    
+                    return 'Jedi Master';
+                        break;
+                }
+            }
+                   console.log(exeperiencia(6));
+
+
+            var usuarios=[
+                {
+                    nome: "Diego",
+                    habilidades: ["JavaScript", "ReactJS", "redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby", "Elixir"]
+
+                }
+
+            ];
+
+            function perfildeusuario(usuarios){
+                for (var i = 0; i < usuarios.length; i++) {
+                    console.log(`O ${usuarios[i].nome} possui as habilidades: ${usuarios[i].habilidades}`)
+                }
+            }                
+
+
+           perfildeusuario(usuarios);
+        </script>  
+     </body> 
+</html>

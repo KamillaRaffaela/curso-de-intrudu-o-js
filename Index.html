@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Desafio do Curso </title>
+    </head>
+   <body>
+       <script>
+
+        
+            var Endereco = 
+            {
+                rua:"Rua dos Pinheiros",
+                numero: 1293,
+                bairro:"Centro",
+                cidade:"São Paulo",
+                uf:"SP" 
+            };
+        
+            console.log(`O Usuario mora em ${Endereco.cidade} / ${Endereco.uf} no ${Endereco.bairro} na ${Endereco.rua} com nº ${Endereco.numero}`);
+        
+
+            function pares(numero1, numero2) {
+                // for do numero 1 ate o numero2 incrementando 1
+                    for (var i=numero1; i < numero2; i++) {
+                        // if o ((numero % 2) === 0)
+                        if (i % 2 === 0){
+                            console.log(`Os números pares são : ${i}`);
+                        }
+                    }       
+            }
+
+            pares(32,321);
+
+            var  ListaDeHabilidades = [
+                "Javascript",
+                "ReactJS",
+                "React Native",
+                "Javascript"
+                ];
+            
+            function temHabilidades(skills) {
+                for (var i= 0; i < skills.length; i++){
+                   if(skills[i] == "Javascript"){
+                       console.log(true)
+                   }
+                }
+            }
+                temHabilidades(ListaDeHabilidades)
+            
+      
+        </script>  
+     </body> 
+</html>
